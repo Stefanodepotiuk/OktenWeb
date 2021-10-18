@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Apple Store</title>
     <style>
-        body {
+        body,html {
             background: silver;
             margin-left: 40px;
+            margin-bottom: 50px;
+            scroll-behavior: smooth;
         }
 
         .type1 {
@@ -49,25 +51,81 @@
             width: 1500px;
             margin-left: 20px;
         }
-        img{
+
+        img {
             background: silver;
         }
 
         .type4 {
-
-            margin-top:50px ;
-            margin-left: 20px;
+            width: 1250px;
+            margin-top: 50px;
+            margin-left: 70px;
             padding-right: 20px;
+            margin-bottom: 50px;
+            border: 2px solid black;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 60px -16px gray;
+
         }
-img{
-    width: 400px;
-    height:400px;
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .type5 {
+            height: 300px;
+            width: 300px;
+            background: cornflowerblue;
+            display: inline-block;
+            border: 0.5px solid black;
+            box-shadow: 60px -16px 100px gray;
+
+
+        }
+
+        .type6 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        a:hover {
+            color: #f18910;
+            display: flex;
+
+        }
+
+        a {
+            color: #070707;
+            text-decoration: none;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            margin-top: 40%;
+
+        }
+
+        .type7 {
+            width: 300px;
+            height: 300px;
+            background: white;
+            border-radius: 50%;
+            margin:auto;
+            margin-top: 1000px;
+            border: 20px solid red;
+        }
+        .p1{
+
 }
+
     </style>
 </head>
 <body>
 
-<h1>Apple Store</h1>
+<h1 style="color: darkgoldenrod">Apple Store</h1>
 <hr>
 
 <div class="type3"><p>
@@ -115,12 +173,42 @@ img{
     </div>
 </div>
 
+<h2>Our customers prefer</h2>
+
+<div class="type3"><p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem doloremque error fugiat magnam, quis ratione
+    sint voluptate. Aliquid et itaque mollitia, pariatur ratione similique tempore? At aut eligendi enim harum illo
+    ipsum quos ratione temporibus tenetur, totam veritatis vero, voluptate, voluptatum. Eveniet quisquam quod ut!
+    Accusamus quas sunt unde.
+</p></div>
+
+
 <div class="type4">
     <img src="https://mamaitaliano.com.ua/wp-content/themes/pizza/assets/images/cheb/marichn-img.png" alt="">
     <img src="https://mamaitaliano.com.ua/wp-content/themes/pizza/assets/images/cheb/marichn-img.png" alt="">
     <img src="https://mamaitaliano.com.ua/wp-content/themes/pizza/assets/images/cheb/marichn-img.png" alt="">
 </div>
 
+<h2>Do you like these squares?</h2>
+<h3>Choose your prize</h3>
 
+<div class="type6">
+    <div class="type5">
+        <a href="#One">One</a>
+    </div>
+
+    <div class="type5">
+        <a href="#Two">Two</a>
+    </div>
+
+
+    <div class="type5">
+        <a href="#Three">Three</a>
+    </div>
+</div>
+
+<div class="type7" id="One"><p1>Prank</p1></div>
+<div class="type7" id="Two"><p1>Prank</p1></div>
+<div class="type7" id="Three" ><p1>Prank</p1></div>
 </body>
 </html>
