@@ -1,0 +1,38 @@
+.BigBox{
+    margin: 0 auto;
+   width: 550px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: honeydew;
+}
+.Box_1{
+    height: 150px;
+    background: darkblue;
+}
+.Box_2{
+    height: 100px;
+    background: darkslateblue;
+}
+.Box_3{
+    display: flex;
+   column-gap: 3px;
+}
+.value1{
+    height: 400px;
+    background: #3838d7;
+    flex-grow: 3;
+}
+.value2{
+    height: 400px;
+    background:#645e86 ;
+    flex-grow: 1;
+}
+.Box_4{
+    height: 100px;
+    background: #21e09f;
+}
+

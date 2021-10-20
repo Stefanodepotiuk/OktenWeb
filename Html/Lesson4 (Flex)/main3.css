@@ -1,0 +1,36 @@
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+
+}
+.c-or {
+    background: #1b1b6b;
+}
+.contentK{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.A{
+    height: 200px;
+
+}
+.B{
+    display: flex;
+    column-gap: 5px;
+    margin-top: 5px;
+}
+.Bchild{
+    height: 200px;
+    flex-grow: 1;
+    background: darkblue;
+
+}
+.C{
+    height: 400px;
+
+    margin-top: 5px;
+}

@@ -1,0 +1,47 @@
+
+.a {
+    height: 100px
+
+}
+.box{
+    background: silver;
+    border-radius: 8px;
+}
+.content{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+
+
+}
+.b {
+    display: flex;
+    column-gap: 10px;
+
+}
+
+.c {
+    width: 70%;
+    height: 200px;
+}
+
+.f {
+    width: 30%;
+    height: 200px;
+}
+
+.wrap {
+    width: 1000px;
+
+    border: 2px solid black;
+    border-radius:8px ;
+
+    margin: 0 auto;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    box-sizing: border-box;
+
+}
