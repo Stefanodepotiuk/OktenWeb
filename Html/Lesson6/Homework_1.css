@@ -1,0 +1,109 @@
+:root {
+    --color_purple: #4C335A;
+    --color_black: #1B1A18;
+    --color_purpl_pink: #E83F68;
+}
+
+body, html {
+    background: var(--color_purple);
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFEDFF;
+}
+
+.black_border {
+    margin: 50px auto;
+    max-width: 1280px;
+
+    border: 30px solid var(--color_black);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.Main {
+    background-image: url("https://7themes.su/php/imres/resize.php?width=1280&height=1024&cropratio=5:4&image=/_ph/26/856602235.jpg");
+    background-repeat: no-repeat;
+    height: 664px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+.LOGO {
+    height: 50px;
+    width: 50px;
+    background: #070707;
+    box-shadow: 10px -10px black;
+
+
+}
+
+.four_link {
+    display: flex;
+}
+
+.box {
+    height: 50px;
+    width: 100px;
+    border: 2px solid transparent;
+    transition: 0.75s;
+}
+
+.box:hover {
+    border-color: #F7ABDA;
+}
+
+.three_lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    column-gap: 20px;
+
+
+}
+
+.line {
+    height: 4px;
+    width: 50px;
+    border-radius: 20px;
+    background: #FFEDFF;
+}
+
+.line:hover {
+    background-color: aqua;
+}
+
+.content {
+    height: 100px;
+    margin-top: 20px;
+
+}
+
+.CDA {
+    transition: .75s;
+}
+
+.CDA:hover {
+    color: var(--color_purpl_pink);
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button_pop {
+    height: 30px;
+    width: 100px;
+    background: var(--color_purpl_pink);
+    border-color: var(--color_purpl_pink);
+}

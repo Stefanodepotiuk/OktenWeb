@@ -1,0 +1,74 @@
+@media screen and  (max-width:1200px) {
+
+
+
+
+
+    :root {
+        --color_purple: #4C335A;
+        --color_black: #1B1A18;
+        --color_purpl_pink: #E83F68;
+    }
+
+
+    .Main {
+        background: var(--color_purpl_pink);
+        height: 1500px;
+    }
+
+    .black_border {
+        max-width: 900px;
+    }
+
+    .text {
+        font-size: 30px;
+        color: aqua;
+    }
+
+    .four_link {
+        flex-direction: column;
+    }
+
+    .footer {
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .LOGO {
+        height: 200px;
+        width: 200px;
+        background: #070707;
+        box-shadow: 40px -20px var(--color_purple);
+    }
+
+    .box {
+
+        width: 200px;
+
+    }
+
+    .button_pop {
+        height: 50px;
+        width: 200px;
+        background: var(--color_purple);
+        border-color: var(--color_purple);
+    }
+
+    .button {
+        margin-top: 500px;
+    }
+
+    .line {
+        height: 10px;
+        width: 100px;
+
+    }
+    .CDA:hover {
+        color: aqua;
+    }
+    .word{
+        font-size: 30px;
+        color: black;
+    }
+}
+
