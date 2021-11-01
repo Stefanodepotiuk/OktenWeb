@@ -1,0 +1,152 @@
+body,html{
+    background: silver;
+}
+.wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url("../restoran+bootstrap/image2/hero.png") ;
+
+}
+.header{
+    padding-top: 20px;
+    padding-left: 165px;
+
+}
+.navbar-nav{
+    margin-left: 200px;
+}
+.x{
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand img{
+    width: 50px;
+height: 50px;
+
+
+}
+.nav-link img{
+    width: 20px;
+}
+.line{
+    width: 50px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+    margin-top: 25px;
+}
+.contact{
+    max-width: 200px;
+}
+.up{
+    display: flex;
+}
+.number{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+}
+
+.under{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+}
+.button{
+    width: 157px;
+    height: 47px;
+    background: #FF7400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background: white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF;
+    padding-right: 0;
+}
+.welkome{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welkome h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 57px;
+    color: #D67E35;
+    font-family: Tinos;
+}
+.welkome h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 92px;
+    color: #D67E35;
+    font-family: Tinos;
+}
+.welkome p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welkome p::before,
+.welkome p::after{
+    content: "";
+    display: block;
+    width: 61px;
+    height: 2px;
+    background:#FFFFFF ;
+}
+.welkome p::before{
+    margin-right: 10px;
+}
+.welkome p::after{
+    margin-left: 10px;
+}
+.button_1{
+    width: 137px;
+    height: 47px;
+    left: 356px;
+    top: 522px;
+    background: #FF7400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+@media screen and (width: 400px){
+    .welkome {
+        left: 50px;
+    }
+}
