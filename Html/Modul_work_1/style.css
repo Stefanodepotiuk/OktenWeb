@@ -1,4 +1,6 @@
 
+
+
 .nav {
     background: #0F2438;
     justify-content: space-around;
@@ -41,6 +43,12 @@
     padding: 0;
 }
 
+.w{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .Header {
     display: flex;
     justify-content: space-between;
@@ -53,7 +61,10 @@
     align-items: center;
     column-gap: 5px;
 }
-
+.box_media{
+    display: flex;
+    column-gap: 5px;
+}
 .label_name {
     width: 180px;
 }
@@ -725,10 +736,10 @@
 .short_information {
     width: 83%;
     margin: 0 auto;
-    padding: 0;
+
     display: flex;
     justify-content: space-between;
-    height: 400px;
+padding-bottom: 100px;
     padding-top: 40px;
     position: relative;
 
@@ -822,3 +833,7 @@
     line-height: 20px;
     color: #737E9B;
 }
+.k{
+    display: none;
+}
+
