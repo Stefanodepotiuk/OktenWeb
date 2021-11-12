@@ -22,40 +22,27 @@
     result = rar[0] + rar[1] + rar[2] + rar[3] + rar[4] + rar[5] + rar[6] + rar[7] + rar[8] + rar[9] ;
 console.log(result);
     <!--2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр-->
-    const book = Object.create({},{
-        name:{
-            value: 'bookvar'
-        },
-        page:{
-            value:145
-        },
-        genre:{
-            value:'science'
-        },
 
-        actor:{
-            value:'georg'
-        }
+    let book = {
+        name: 'poter',
+        page: '123',
+        genre: 'drama'
+
+    }
+    console.log(book.name);
+    console.log(book.page);
+    console.log(book.genre);
 
 
 
-    });
-    console.log(book)
+
     // <!--3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори-->
-    const book2 = Object.create({},{
-        name:{
-            value: 'apostol'
-        },
-        page:{
-            value:45
-        },
-        genre:{
-            value:'history'
-        },
-        actor:{
-            value:'adolf'
-        }
-    });
+    let book2 = {
+        name:  'apostol',
+        page:  45,
+        genre: 'history',
+        actor: 'adolf',
+    }
     console.log(book2);
     <!--4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт-->
 
@@ -82,12 +69,9 @@ console.log(v+ ' cm3');
     <!--Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).-->
 let num = 3;
 let num2 = 4;
-let pow1 = 2;
-let pow2 = 0.5;
-let r =Math.pow(num,pow1);
-let sss =Math.pow(num2,pow1);
-let iii =r+sss;
-console.log(Math.pow(iii,pow2));
+let r =Math.pow(num,2);
+let sss =Math.pow(num2,2);
+console.log(Math.pow(r+sss,0.5 ));
 
 
 

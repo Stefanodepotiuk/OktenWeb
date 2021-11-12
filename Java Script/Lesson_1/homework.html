@@ -81,12 +81,12 @@
     a = 'lol';
     b = 'go';
     c = 12;
-    d ="mamka";
+    d = "mamka";
     f = 545;
     s = false;
     q = "trt";
     s = 96.54;
-    e= "win"
+    e = "win"
     k = true;
     t = 0.005;
 
@@ -116,13 +116,13 @@
     document.write(k);
     document.write(t);
 
-    let person = {
-        name:'stepan',
-        midl_name:'potiuk',
-        last_name:'Mikhailovich',
-        age:23
-    }
+    <!-- - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)-->
 
+    let name1 = 'stepan';
+    let midlName = 'potiuk';
+    let lastName = 'Mikhailovich';
+    let person = midlName +" "+ lastName +" "+ name1;
+    console.log(person);
     // let p = prompt("enter name");
     // let y = prompt("enter second name");
     // let o = prompt("enter age");
@@ -139,28 +139,27 @@
     <!-- - Визначити відповідний оператор в виразах що б вийшов відповідний результат.-->
     <!--В однакових виразах не використовувати однакові оператори!!!-->
     <!--5 ? 6 -> true-->
-    console.log(!! (5<6));
+    console.log(!!(5 < 6));
     <!--5 ? 6 -> false-->
-    console.log(!! (5>6));
+    console.log(!!(5 > 6));
     <!--5 ? 6 -> false-->
-    console.log(!! (5==6));
+    console.log(!!(5 == 6));
     <!--5 ? 6 -> false-->
-    console.log(!! (5===6));
+    console.log(!!(5 === 6));
     <!--10 ? 10 -> true-->
-    console.log(!! (10==10));
+    console.log(!!(10 == 10));
     <!--10 ? 10 -> true-->
-    console.log(!! (10===10));
+    console.log(!!(10 === 10));
     <!--10 ? 10 -> false-->
-    console.log(!! (10!=10));
+    console.log(!!(10 != 10));
     <!--10 ? 10 -> false-->
-    console.log(!! (10<10));
+    console.log(!!(10 < 10));
     <!--10 ? 10 -> false-->
-    console.log(!! (10>10));
+    console.log(!!(10 > 10));
     <!--123 ? '123' -> false-->
-    console.log(!! (123!=123));
+    console.log(!!(123 != 123));
     <!--123 ? '123' -> true-->
-    console.log(!! (123==123));
-
+    console.log(!!(123 == 123));
 
 
     <!-- - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?-->
