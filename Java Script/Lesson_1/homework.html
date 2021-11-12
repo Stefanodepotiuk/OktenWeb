@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework</title>
+</head>
+<body>
+<!-- - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.-->
+<!--Вивести кожну змінну за допомогою: console.log , alert, document.write-->
+<!-- - Переприсвоїти кожній змінній з завдання значення на довільне.-->
+<!--Вивести кожну змінну за допомогою: console.log , alert, document.write-->
+<!-- - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)-->
+<!-- - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.-->
+<!--Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".-->
+<!-- - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.-->
+<!--let a = 100; let b = '100'; let c = true;-->
+<!-- - Визначити відповідний оператор в виразах що б вийшов відповідний результат.-->
+<!--В однакових виразах не використовувати однакові оператори!!!-->
+<!--5 ? 6 -> true-->
+<!--5 ? 6 -> false-->
+<!--5 ? 6 -> false-->
+<!--5 ? 6 -> false-->
+<!--10 ? 10 -> true-->
+<!--10 ? 10 -> true-->
+<!--10 ? 10 -> false-->
+<!--10 ? 10 -> false-->
+<!--10 ? 10 -> false-->
+<!--123 ? '123' -> false-->
+<!--123 ? '123' -> true-->
+
+<!-- - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?-->
+<!--let str = "20";-->
+<!--let a = 5;-->
+<!--document.write(str + a + "<br/>");-->
+<!--document.write(str - a + "<br/>");-->
+<!--document.write(str * "2" + "<br/>");-->
+<!--document.write(str / 2 + "<br/>");-->
+
+<script>
+    let a = 'hello';
+    let b = 'owu';
+    let c = 'com';
+    let d = 'ua';
+    let f = 1;
+    let g = 10;
+    let s = 123;
+    let q = 3.14;
+    let w = 2.7;
+    let e = 16;
+    let k = true;
+    let t = false;
+    console.log(a, b, c, d, f, g, s, q, w, e, k, t);
+    // alert(a);
+    // alert(b);
+    // alert(c);
+    // alert(d);
+    // alert(f);
+    // alert(g);
+    // alert(s);
+    // alert(q);
+    // alert(w);
+    // alert(e);
+    // alert(k);
+    // alert(t);
+    document.write(a);
+    document.write(b);
+    document.write(c);
+    document.write(d);
+    document.write(f);
+    document.write(g);
+    document.write(s);
+    document.write(q);
+    document.write(w);
+    document.write(e);
+    document.write(k);
+    document.write(t)
+
+    a = 'lol';
+    b = 'go';
+    c = 12;
+    d ="mamka";
+    f = 545;
+    s = false;
+    q = "trt";
+    s = 96.54;
+    e= "win"
+    k = true;
+    t = 0.005;
+
+    console.log(a, b, c, d, f, g, s, q, w, e, k, t);
+    // alert(a);
+    // alert(b);
+    // alert(c);
+    // alert(d);
+    // alert(f);
+    // alert(g);
+    // alert(s);
+    // alert(q);
+    // alert(w);
+    // alert(e);
+    // alert(k);
+    // alert(t);
+    document.write(a);
+    document.write(b);
+    document.write(c);
+    document.write(d);
+    document.write(f);
+    document.write(g);
+    document.write(s);
+    document.write(q);
+    document.write(w);
+    document.write(e);
+    document.write(k);
+    document.write(t);
+
+    let person = {
+        name:'stepan',
+        midl_name:'potiuk',
+        last_name:'Mikhailovich',
+        age:23
+    }
+
+    // let p = prompt("enter name");
+    // let y = prompt("enter second name");
+    // let o = prompt("enter age");
+    // console.log('Вітаю'+ p,y + 'тобі вже' + o + 'роки');
+
+    let aa = 100;
+    let bb = '100';
+    let cc = true;
+    console.log(typeof aa);
+    console.log(typeof bb);
+    console.log(typeof cc);
+
+
+    <!-- - Визначити відповідний оператор в виразах що б вийшов відповідний результат.-->
+    <!--В однакових виразах не використовувати однакові оператори!!!-->
+    <!--5 ? 6 -> true-->
+    console.log(!! (5<6));
+    <!--5 ? 6 -> false-->
+    console.log(!! (5>6));
+    <!--5 ? 6 -> false-->
+    console.log(!! (5==6));
+    <!--5 ? 6 -> false-->
+    console.log(!! (5===6));
+    <!--10 ? 10 -> true-->
+    console.log(!! (10==10));
+    <!--10 ? 10 -> true-->
+    console.log(!! (10===10));
+    <!--10 ? 10 -> false-->
+    console.log(!! (10!=10));
+    <!--10 ? 10 -> false-->
+    console.log(!! (10<10));
+    <!--10 ? 10 -> false-->
+    console.log(!! (10>10));
+    <!--123 ? '123' -> false-->
+    console.log(!! (123!=123));
+    <!--123 ? '123' -> true-->
+    console.log(!! (123==123));
+
+
+
+    <!-- - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?-->
+    <!--let str = "20" виведеться 20,але як string тому що  str всьо навсього назва змінної console.log і все;-->
+
+    <!--let a = 5  виведеться 5.як число тому що  а всьо навсього назва змінної console.log і все;;-->
+
+    <!--document.write(str + a + "<br/>") -----спрацює отримуємо ми:205<br/>-->
+    <!--document.write(str - a + "<br/>")----помилка через мінус;-->
+    <!--document.write(str * "2" + "<br/>") помилка через *;-->
+    <!--document.write(str / 2 + "<br/>")---помилка через /;-->
+
+</script>
+</body>
+</html>
