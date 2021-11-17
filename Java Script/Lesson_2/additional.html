@@ -75,21 +75,18 @@
     <!--result = 'Багато';-->
     <!--}-->
 
-    // let result;
-    // let asd = result ? "malo" : "bagato";
-    // if (a + b < 4) {
-    // console.log()
-    // }
+     // let result;
+     // let asd = result === a + b < 4 ? "malo" : "bagato";
+     // console.log()
+
 
     <!-- - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем-->
     <!--напишіть це тернарним оператором-->
 
     let num =0;
-    let qwe = num > 0  ? "Позитивне" : "Негативне";
+    let qwe = num > 0  ? "Позитивне" : num <  0 ? "негативним": "нулем";
     console.log( qwe);
-    if (num === 0) {
-        console.log( "нуль");
-    }
+
 
 </script>
 
