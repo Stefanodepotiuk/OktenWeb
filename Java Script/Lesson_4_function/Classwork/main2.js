@@ -48,39 +48,56 @@
 // - створити функцію яка повертає найбільше число з масиву
 // function www() {
 //     let ar = [1,2,3,4345,55,7,7,99,123];
-//         console.log(Math.max(...ar));
+//     let max = ar[0];
+//
+//     for (const number of ar) {
+//         if (number > max) {
+//             max = number;
+//         }
+//
+//     }
+//     console.log(max);
+//     return max;
 //     }
 // www();
 
 // - створити функцію яка повертає найменьше число з масиву
-// function qqq() {
-//     let www = [2,33,44,345,7800,12];
-//     console.log(Math.min(...www));
-// }
-// qqq();
+//  function qqq() {
+//      let www = [27,33,44,345,7800,12,98];
+//      let min = www[0];
+//      for (const numbers of www) {
+//          if (numbers < min) {
+//              min = numbers;
+//          }
+//      }
+//      console.log(min);
+//      return min;
+//  }
+//  qqq();
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-// function asd() {
-//     let a =0;
-//     let qwe=[100,200,500];
-//     for (let i = 0; i < qwe.length; i++) {
-//         a = a + qwe[i];
-//     }
-//     console.log(a);
-// }
+//  function asd(qwe) {
+//      let a =0;
+//      for (let i = 0; i < qwe.length; i++) {
+//          a = a + qwe[i];
+//      }
+//      console.log(a);
+//      return a;
+//  }
 //
-// asd();
+//  asd([100,200,500]);
 
 // // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
-// let a = 0;
-// function www() {
-//     let ar = [100, 200, 600];
+//
+// function www(ar) {
+//     let a = 0;
 //     for (let i = 0; i < ar.length; i++) {
 //         a += ar[i] / ar.length;
 //     }
 //     console.log(a);
+//     return a;
 // }
-// www();
+// www([100, 200, 600]);
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 // function www() {
@@ -158,9 +175,12 @@
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // function www(arr) {
-//     let newarr = [];
-//     for (let i = newarr.length - 1; ri = 0, i >= 0; i--, ri++) {
-//         newarr[ri] = newarr [i];
+//     let new_arr = [];
+//     for (let i = arr.length - 1 ,ri = 0;  i >= 0 ; i--, ri++) {
+//         new_arr[ri] = arr[i];
 //
 //     }
+//     console.log(new_arr);
 // }
+//
+// www([1,2,3]);

@@ -49,9 +49,45 @@
 //
 //     }
 //     console.log(New_qrr);
+//     return New_qrr;
 // }
 // fuc();
 
 //- Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
 //EXAMPLE:
+//[{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+//
+//
+// function keys(arr) {
+//     let nwe_arr = [];
+//     let x = 0;
+//     for (const user of arr) {
+//         for (const userKey in user) {
+//             nwe_arr[x]=userKey;
+//             x++;
+//         }
+//     }
+//     console.log(nwe_arr);
+//     return nwe_arr;
+// }
+// keys([{name: 'Dima', age: 13}, {model: 'Camry'}]);
 
+//     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+// EXAMPLE:
+//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+//
+// function asd(arr) {
+//     let new_arr = [];
+//     let x = 0;
+//     for (const user of arr) {
+//         for (const userKey in user) {
+//             new_arr[x] = user[userKey];
+//             x++
+//
+//         }
+//     }
+//     console.log(new_arr);
+//     return new_arr;
+// }
+//
+// asd( [{name: 'Dima', age: 13}, {model: 'Camry'}]);
