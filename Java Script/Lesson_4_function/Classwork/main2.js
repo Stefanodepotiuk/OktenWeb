@@ -174,13 +174,15 @@
 // www(100);
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-// function www(arr) {
-//     let new_arr = [];
-//     for (let i = arr.length - 1 ,ri = 0;  i >= 0 ; i--, ri++) {
-//         new_arr[ri] = arr[i];
-//
-//     }
-//     console.log(new_arr);
-// }
-//
-// www([1,2,3]);
+ function www(arr) {
+     let new_arr = [];
+
+     for (let i = 0, ri = arr.length - 1;   i<arr.length ; i++, ri--) {
+         new_arr[ri] = arr[i];
+
+     }
+
+     return new_arr;
+ }
+
+console.log(www([1, 2, 3]));
