@@ -58,20 +58,19 @@
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
-// let camel = () => {
-//     let arr = [6, 0, 3, 0, 4, 5, 0, 1];
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] === 0) {
-//             for (let j = i; j < arr.length - 1; j++) {
-//                 arr[j] = arr[j + 1];
-//             }
-//             arr[arr.length - 2] = arr[arr.length - 1];
-//             arr[arr.length - 1] = 0;
-//         }
-//         console.log(arr);
-//     }
-// };
-// camel();
+let camel = (arr) => {debugger;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === 0) {
+            for (let j = i; j < arr.length - 1; j++) {
+                arr[j] = arr[j + 1];
+            }
+            arr[arr.length - 2] = arr[arr.length - 1];
+            arr[arr.length - 1] = 0;
+        }
+        console.log(arr);
+    }
+};
+camel([6, 0, 3, 0, 4, 5, 0, 1]);
 
 
 
