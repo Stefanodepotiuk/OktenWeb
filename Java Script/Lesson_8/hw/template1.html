@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, nisi.</p>
+
+<div id="rules" class="fc bp">apple apple apple apple apple apple</div>
+<ul>
+    <li class="fc_rules rule1"> father father father father father father father father father father </li>
+    <li class="fc_rules rule2"> mam mam mam mam mam mam mam mam mam mam mam mam</li>
+    <li class="fc_rules rule3"> brother brother brother brother brother brother brother brother</li>
+    <li class="fc_rules rule4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, totam?</li>
+</ul>
+<script>
+    // Візьміть файл template1.html, підключіть до нього скрипт, і працюйте в ньому!
+    //
+    //     - Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName
+    //     або document.getElementsByTagName :
+    // -- отримує текст з параграфа з id "content"
+    let pId = document.getElementById('content')
+    console.log(pId.innerText);
+    // -- отримує текст з блоку з id "rules"
+    let rul_id = document.getElementById('rules');
+    console.log(rul_id.innerText);
+    //console.log(document.getElementById('rules').innerText);
+
+    // -- замініть текст параграфа з id 'content' на будь-який інший
+    pId.innerText = 'dog dog';
+
+    // -- замініть текст параграфа з id 'rules' на будь-який інший
+    rul_id.innerText = 'ate an apple';
+    // -- змініть кожному елементу колір фону на червоний
+    let children = document.body.children;
+    for (const child of children) {
+        child.style.background = 'red';
+    }
+
+    // -- змініть кожному елементу колір тексту на синій
+    for (const child of children) {
+        child.style.color = 'blue';
+    }
+
+    // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
+    console.log(rul_id.classList);
+
+    // -- поміняти колір тексту у всіх елементів fc_rules на червоний
+    let change_color = document.getElementsByClassName('fc_rules');
+    for (const changeColorElement of change_color) {
+        changeColorElement.style.color = 'black';
+    }
+
+</script>
+</body>
+</html>
