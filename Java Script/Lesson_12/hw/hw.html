@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw</title>
+</head>
+<body>
+
+<div class="posts"></div>
+<div class="coments"></div>
+
+
+
+<script>
+
+    // <!--1.-->
+    // <!--Отримати відповідь з цього ресурсу відповідь, та вивести в документ об'єкти. Застилізувати, за допомоги css,-->
+    // <!--щоб отримати 5 елементів в рядку.-->
+    //     <!--Для кожного елементу свій блок div.post-->
+    // <!--Всі характеристики повинні мати свої блоки всередені div.post-->
+    //  <!--https://jsonplaceholder.typicode.com/posts-->
+    //
+    // let classDiv = document.getElementsByClassName('posts')[0];
+    //
+    // fetch('https://jsonplaceholder.typicode.com/posts')
+    // .then(value => value.json())
+    // .then(value => {
+    //     for (const postelement of value) {
+    //         let postDiv = document.createElement('div');
+    //         postDiv.classList.add('post');
+    //
+    //         let idDiv = document.createElement('div');
+    //         idDiv.innerText = `id - ${postelement.id}`;
+    //
+    //         let useridDiv = document.createElement('div');
+    //         useridDiv.innerText = `user id - ${postelement.userId}`;
+    //
+    //         let titleDiv = document.createElement('h3');
+    //         titleDiv.innerText = postelement.title;
+    //
+    //         let bodyDiv = document.createElement('div');
+    //         bodyDiv.innerText = postelement.body;
+    //
+    //
+    //         postDiv.append(idDiv,useridDiv,titleDiv,bodyDiv);
+    //
+    //         classDiv.appendChild(postDiv);
+    //     }
+    //
+    // })
+
+
+    // <!--2.-->
+    // <!--Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.-->
+    // <!--Для кожного елементу свій блок div.comment-->
+    // <!--Всі характеристики повинні мати свої блоки всередені div.comment-->
+    // <!--https://jsonplaceholder.typicode.com/comments-->
+
+    let coments = document.getElementsByClassName('coments')[0];
+
+    fetch('https://jsonplaceholder.typicode.com/comments')
+        .then(value => value.json())
+        .then(value => {
+            for (const comnetitem of value) {
+                let comentItemDiv = document.createElement('div');
+                comentItemDiv.classList.add('comment');
+
+                let postId = document.createElement('div');
+                postId.innerText = 'post id ' + comnetitem.postId;
+
+                let Id = document.createElement('div');
+                Id.innerText = ' id ' + comnetitem.id;
+
+                let name = document.createElement('div');
+                name.innerText = 'name - ' + comnetitem.name;
+
+                let email = document.createElement('div');
+                email.innerText = 'email - ' + comnetitem.email;
+
+                let bodyDiv = document.createElement('div');
+                bodyDiv.innerText = 'body - ' + comnetitem.body;
+
+
+                comentItemDiv.append(postId,Id,name,email,bodyDiv);
+                coments.appendChild(comentItemDiv);
+
+
+            }
+
+        });
+
+</script>
+
+</body>
+</html>
