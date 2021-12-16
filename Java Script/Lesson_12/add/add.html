@@ -40,6 +40,7 @@
         .then(value => value.json())
         .then(value => {
             for (const userelement of value) {
+
                 let userelementDiv = document.createElement('div');
                 userelementDiv.innerText = "name : " + userelement.name + " | | " + "username : " + userelement.username;
                 userelementDiv.classList.add('user');
@@ -48,7 +49,7 @@
                 buttonDiv.innerText = 'click';
                 buttonDiv.onclick = function () {
 
-                    fetch(`https://jsonplaceholder.typicode.com/posts/${userelement.id}/posts`)
+                    fetch(`https://jsonplaceholder.typicode.com/users/${userelement.id}/posts`)
                         .then(value => value.json())
                         .then(value => {
                             let postDiv = document.createElement('div');
@@ -72,10 +73,11 @@
                                                 comentar.innerText = valueElement.body;
                                                 comentar.classList.add('comentar');
                                                 commentDiv.appendChild(comentar);
+
+                                               this.disabled = true;
                                             }
 
                                             somePost.appendChild(commentDiv);
-
                                         });
 
 
@@ -87,7 +89,7 @@
 
                                 somePost.append(btnDiv);
                                 postDiv.appendChild(somePost);
-
+                                this.disabled = true;
                             }
 
                            userelementDiv.appendChild(postDiv);
