@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dop</title>
+</head>
+<body>
+
+
+<script>
+    //////////////////////////////////////////////////
+    //callback
+    //////////////////////////////////////////////
+
+    // let mood = 50;
+    //     function getUp(getUpDone,callback) {
+    //         setTimeout(() => {
+    //             if (getUpDone) {
+    //                 mood += 10;
+    //                 console.log('Ми прокинулись');
+    //                 callback();
+    //             } else {
+    //                 console.log('bed mood = bed life');
+    //             }
+    //
+    //         },3000);
+    //     }
+    //
+    // function shower(showerDone,callback) {
+    //         console.log(showerDone,'тре купити шампунь');
+    //     setTimeout(() => {
+    //         if (showerDone > 50) {
+    //
+    //            console.log('можна й по митись');
+    //             mood += 10;
+    //             callback();
+    //         } else {
+    //             console.log('Нема настою митись');
+    //         }
+    //
+    //     },1000);
+    // }
+    //
+    //
+    // function breakfast(tasty,callback) {
+    //     console.log(tasty,'смачно');
+    //
+    //     setTimeout(() => {
+    //         if (tasty > 60) {
+    //
+    //             console.log('підзарядились');
+    //             mood += 10;
+    //             callback();
+    //         } else {
+    //             console.log('тре було поїсти');
+    //         }
+    //
+    //     },500);
+    // }
+    //
+    // function getbyBuss(wait) {
+    //     console.log(wait,'маємо настрій вже в автобусі їхати');
+    //
+    //     setTimeout(() => {
+    //         if (wait > 70) {
+    //
+    //             console.log('ми вже поїхали');
+    //             mood += 20;
+    //         } else {
+    //             console.log('можемо запізнитись');
+    //         }
+    //
+    //     },800);
+    // }
+    //
+    // function job(solary) {
+    //     console.log(wait,'так . явже готовий працювати');
+    //
+    //     setTimeout(() => {
+    //         if (solary > 90) {
+    //
+    //             console.log('ці колбеки прості як двері, правда змудрованим замком');
+    //
+    //         } else {
+    //             console.log('а нахув то всьо?');
+    //         }
+    //
+    //     },50);
+    // }
+    //
+    //
+    //
+    //
+    // getUp(true, () => {
+    //     shower(mood, () => {
+    //         breakfast(mood, () => {
+    //             getbyBuss(mood, () => {
+    //                 job(mood);
+    //             });
+    //         });
+    //
+    //     });
+    //
+    // });
+    //////////////////////////////////////////////////
+    //callback
+    //////////////////////////////////////////////
+
+
+    //////////////////////////////////////////////////
+    //promis
+    //////////////////////////////////////////////
+
+    //
+    // let mood = 50;
+    //
+    // function getUp(getUpDone) {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             if (getUpDone) {
+    //                 mood += 10;
+    //                 console.log('Ми прокинулись');
+    //                 resolve(mood);
+    //             } else {
+    //                 console.log('bed mood = bed life');
+    //                 reject("xaxaxax");
+    //             }
+    //
+    //         }, 3000);
+    //     });
+    // }
+    //
+    // function shower(showerDone) {
+    //     return new Promise((resolve, reject) => {
+    //
+    //         console.log(showerDone, 'тре купити шампунь');
+    //         setTimeout(() => {
+    //             if (showerDone > 50) {
+    //
+    //                 console.log('можна й по митись');
+    //                 mood += 10;
+    //                 resolve(mood);
+    //             } else {
+    //                 console.log('Нема настою митись');
+    //                 reject('pop');
+    //             }
+    //
+    //         }, 1000);
+    //     });
+    // }
+    //
+    // function breakfast(tasty) {
+    //     return new Promise((resolve, reject) => {
+    //         console.log(tasty,'смачно');
+    //
+    //         setTimeout(() => {
+    //             if (tasty > 60) {
+    //
+    //                 console.log('підзарядились');
+    //                 mood += 10;
+    //                 resolve(mood);
+    //             } else {
+    //                 console.log('тре було поїсти');
+    //                 reject();
+    //             }
+    //
+    //         },500);
+    //     });
+    //
+    // }
+    //
+    //  function getbyBuss(wait) {
+    //      return new Promise((resolve, reject) => {
+    //          console.log(wait,'маємо настрій вже в автобусі їхати');
+    //
+    //          setTimeout(() => {
+    //              if (wait > 70) {
+    //
+    //                  console.log('ми вже поїхали');
+    //                  mood += 20;
+    //                  resolve(mood);
+    //              } else {
+    //                  console.log('можемо запізнитись');
+    //                  reject();
+    //              }
+    //
+    //          },800);
+    //      });
+    //
+    // }
+    //
+    // function job(solary) {
+    //     return new Promise((resolve, reject) => {
+    //         console.log(solary,'так . явже готовий працювати');
+    //
+    //         setTimeout(() => {
+    //             if (solary > 90) {
+    //                 console.log('ці колбеки прості як двері, правда змудрованим замком');
+    //                 resolve(mood);
+    //
+    //             } else {
+    //                 console.log('а нахув то всьо?');
+    //                 reject('cvc');
+    //             }
+    //
+    //         },50);
+    //     });
+    //
+    // }
+    //
+    // getUp(true)
+    //     .then(wash => {
+    //         return shower(wash);
+    //     })
+    //     .then(food => {
+    //         return breakfast(food);
+    //     })
+    //     .then(long => {
+    //         return getbyBuss(long);
+    //     })
+    //     .then(work => {
+    //         return job(work);
+    //     });
+
+    ///////////////////////////////////////////////////////////
+    //asyn await
+    ///////////////////////////////////////////////////////////
+
+
+    // let mood = 50;
+    //
+    // function getUp(getUpDone) {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             if (getUpDone) {
+    //                 mood += 10;
+    //                 console.log('Ми прокинулись');
+    //                 resolve(mood);
+    //             } else {
+    //                 console.log('bed mood = bed life');
+    //                 reject("xaxaxax");
+    //             }
+    //
+    //         }, 3000);
+    //     });
+    // }
+    //
+    // function shower(showerDone) {
+    //     return new Promise((resolve, reject) => {
+    //
+    //         console.log(showerDone, 'тре купити шампунь');
+    //         setTimeout(() => {
+    //             if (showerDone > 50) {
+    //
+    //                 console.log('можна й по митись');
+    //                 mood += 10;
+    //                 resolve(mood);
+    //             } else {
+    //                 console.log('Нема настою митись');
+    //                 reject('pop');
+    //             }
+    //
+    //         }, 1000);
+    //     });
+    // }
+    //
+    // function breakfast(tasty) {
+    //     return new Promise((resolve, reject) => {
+    //         console.log(tasty,'смачно');
+    //
+    //         setTimeout(() => {
+    //             if (tasty > 60) {
+    //
+    //                 console.log('підзарядились');
+    //                 mood += 10;
+    //                 resolve(mood);
+    //             } else {
+    //                 console.log('тре було поїсти');
+    //                 reject();
+    //             }
+    //
+    //         },500);
+    //     });
+    //
+    // }
+    //
+    //  function getbyBuss(wait) {
+    //      return new Promise((resolve, reject) => {
+    //          console.log(wait,'маємо настрій вже в автобусі їхати');
+    //
+    //          setTimeout(() => {
+    //              if (wait > 70) {
+    //
+    //                  console.log('ми вже поїхали');
+    //                  mood += 20;
+    //                  resolve(mood);
+    //              } else {
+    //                  console.log('можемо запізнитись');
+    //                  reject();
+    //              }
+    //
+    //          },800);
+    //      });
+    //
+    // }
+    //
+    // function job(solary) {
+    //     return new Promise((resolve, reject) => {
+    //         console.log(solary,'так . явже готовий працювати');
+    //
+    //         setTimeout(() => {
+    //             if (solary > 90) {
+    //                 console.log('ці колбеки прості як двері, правда змудрованим замком');
+    //                 resolve(mood);
+    //
+    //             } else {
+    //                 console.log('а нахув то всьо?');
+    //                 reject('cvc');
+    //             }
+    //
+    //         },50);
+    //     });
+    //
+    // }
+    //
+    // async function everyDay() {
+    //     const morning = await getUp(true);
+    //     const wash = await shower(morning);
+    //     const food = await breakfast(wash);
+    //     const long = await getbyBuss(food);
+    //     const work = await job(long);
+    //
+    // }
+    //
+    // everyDay();
+
+
+
+
+</script>
+
+</body>
+</html>
