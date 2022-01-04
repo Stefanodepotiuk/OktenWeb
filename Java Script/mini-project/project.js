@@ -6,6 +6,7 @@
 
 const UsersDiv = document.getElementsByClassName('users')[0];
 
+
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(value => value.json())
     .then(value => {
@@ -13,25 +14,23 @@ fetch('https://jsonplaceholder.typicode.com/users')
         for (const user of value) {
 
             const user_div = document.createElement('div');
-            user_div.innerText = ' User id : ' + user.id +  ' User name : ' + user.name;
+            user_div.innerText = ' User id : ' + user.id + ' User name : ' + user.name;
             user_div.classList.add('user');
 
             const user_link = document.createElement('a');
-            user_link.innerText = 'user details';
+            user_link.innerText = 'User details';
             user_link.href = 'userdetails.html?id=' + user.id;
+            const user_linkDiv = document.createElement('div');
 
-
-            user_div.append(user_link);
-            UsersDiv.appendChild(user_div);
-            
+            user_linkDiv.append(user_link);
+            user_div.append(user_linkDiv);
+            UsersDiv.append(user_div);
 
 
         }
 
 
     });
-
-
 
 
 //

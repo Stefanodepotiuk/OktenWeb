@@ -68,9 +68,11 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userid)
 
 
         const post_of_current_user = document.createElement('button');
-        post_of_current_user.innerText = 'post of current user';
+        post_of_current_user.innerText = 'Post of current user';
+        post_of_current_user.classList.add('btnbtn');
 
         const posts = document.createElement('div');
+        posts.classList.add('postKKK');
 
 
         post_of_current_user.onclick = function () {
@@ -82,13 +84,15 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userid)
 
                         const tittlepost = document.createElement('div');
                         tittlepost.innerText = ' Title this user : ' + valueElement.title;
+                        tittlepost.classList.add('stl')
+
                         posts.append(tittlepost);
 
-                            const user_link_post = document.createElement('a');
-                            user_link_post.innerText = 'post details';
-                            user_link_post.href = 'Post_details.html?id=' +valueElement.id;
+                        const user_link_post = document.createElement('a');
+                        user_link_post.innerText = 'Post details';
+                        user_link_post.href = 'Post_details.html?id=' + valueElement.id;
 
-                            posts.append(user_link_post);
+                        tittlepost.append(user_link_post);
                     }
                 });
         };
@@ -97,7 +101,8 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userid)
         company.append(companyName, catchPhrase, bs);
         geo.append(lat, lng);
         address.append(street, suite, city, zipcode, geo);
-        userIhfoDiv.append(idDiv, nameDiv, userNameDiv, emailDiv, address, phone, website, company, post_of_current_user, posts);
-
+        userIhfoDiv.append(idDiv, nameDiv, userNameDiv, emailDiv, address, phone, website, company);
+        document.body.appendChild(post_of_current_user);
+        document.body.appendChild(posts);
 
     });
